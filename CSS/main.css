@@ -1,0 +1,76 @@
+.main_bar {
+    width: 100%;
+    height: 55px;
+    border: 1px solid #dedede;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+/* TIL 타이틀 */
+.main_bar--title {
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    left: 30px;
+}
+/* 오른쪽 검색창 + 깃헙링크 구현 */
+.main_bar--right {
+    height: 32px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    right: 30px;
+}
+
+/* 검색창 바깥박스 */
+.main_bar--search {
+    height: 32px;
+    width: 200px;
+    border: 2px solid #dedede;
+    border-radius: 15px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s ease-in;
+    cursor: text;
+}
+
+/* 검색창 입력 */
+.main_bar--search form {
+    border: none;
+    height: 18px;
+    resize: none;
+}
+
+.main_bar--search input {
+    border: none;
+    width: 160px;
+    height: 18px;
+}
+.main_bar--search input:focus {
+    outline: none;
+}
+.fa-search {
+    font-size: 18px;
+}
+
+/* 깃헙링크 박스 */
+.main_bar--link {
+    height: 32px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.main_bar--link p {
+    font-size: 18px;
+}
+.fa-external-link-alt {
+    font-size: 18px;
+    color: darkgray;
+}
