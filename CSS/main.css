@@ -1,76 +1,121 @@
 .main_bar {
-    width: 100%;
-    height: 55px;
-    border: 1px solid #dedede;
-    display: flex;
-    align-items: center;
-    position: fixed;
+  width: 100%;
+  height: 3.6rem;
+  border-bottom: 1px solid #dedede;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  left: 0;
 }
 
 /* TIL 타이틀 */
 .main_bar--title {
-    font-size: 24px;
-    font-weight: 400;
-    position: relative;
-    left: 30px;
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+  left: 30px;
 }
 /* 오른쪽 검색창 + 깃헙링크 구현 */
 .main_bar--right {
-    height: 32px;
-    width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    right: 30px;
+  height: 32px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 30px;
 }
 
 /* 검색창 바깥박스 */
 .main_bar--search {
-    height: 32px;
-    width: 200px;
-    border: 2px solid #dedede;
-    border-radius: 15px;
-    padding: 2px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    transition: 0.5s ease-in;
-    cursor: text;
+  height: 32px;
+  width: 200px;
+  border: 2px solid #dedede;
+  border-radius: 15px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: 0.5s ease-in;
+  cursor: text;
 }
 
 /* 검색창 입력 */
 .main_bar--search form {
-    border: none;
-    height: 18px;
-    resize: none;
+  border: none;
+  height: 18px;
+  resize: none;
 }
 
 .main_bar--search input {
-    border: none;
-    width: 160px;
-    height: 18px;
+  border: none;
+  width: 160px;
+  height: 18px;
 }
 .main_bar--search input:focus {
-    outline: none;
+  outline: none;
 }
 .fa-search {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 /* 깃헙링크 박스 */
 .main_bar--link {
-    height: 32px;
-    width: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+  height: 32px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 .main_bar--link p {
-    font-size: 18px;
+  font-size: 18px;
 }
 .fa-external-link-alt {
-    font-size: 18px;
-    color: darkgray;
+  font-size: 18px;
+  color: darkgray;
 }
+
+/* 좌측 메뉴바 */
+.menu-bar {
+  width: 320px;
+  overflow: scroll;
+  height: 100vh;
+  padding: 2rem 0;
+  border-right: 1px solid #dedede;
+  position: fixed;
+  top: 3.6rem;
+}
+
+/* 타이틀메뉴 바깥경계박스 */
+.sidebar-group {
+  height: 2.3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  margin-bottom: 24px;
+}
+/* 타이틀메뉴 - 타이틀 */
+.sidebar-heading {
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+.fa-caret-right {
+  color: darkgrey;
+}
+
+.sidebar-heading--name {
+  margin-right: 10px;
+}
+
+section:last-child {
+  margin-bottom: 48px;
+}
+
+/* 게시글 내용 */
