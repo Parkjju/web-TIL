@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,12 +13,13 @@
       <p class="main_bar--title">Parkjju's Today I Learned</p>
 
       <div class="main_bar--right">
-        <div class="main_bar--search">
+        <!-- 검색창 -->
+        <form action="" method="get" class="search-box">
           <i class="fas fa-search"></i>
-          <form action="" method="get" class="search-form">
-            <input type="text" id="search" autocomplete="off" />
-          </form>
-        </div>
+          <input class="search-form" type="text" autocomplete="off" />
+        </form>
+
+        <!-- 링크버튼 -->
         <div
           class="main_bar--link"
           onclick="window.open('https://github.com/Parkjju')"
@@ -29,6 +30,8 @@
       </div>
     </div>
 
+    <!-- 스크롤 기능 완료 -->
+    <!-- 애니메이션 줘서 부주제 스크롤 -->
     <div class="menu-bar">
       <ul>
         <li>
@@ -114,6 +117,12 @@
         <li></li>
       </ul>
     </div>
+
+    <main class="main-page">
+      <h1 class="main-page--title">Today I Learned</h1>
+      <div class="line"></div>
+    </main>
+
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"></script>
   </body>
 </html>
