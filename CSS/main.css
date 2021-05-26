@@ -119,7 +119,7 @@ section:last-child {
 .main-page {
   padding-top: 1.5rem;
   padding-left: 20%;
-  box-sizing:border-box;
+  box-sizing: border-box;
   width: 60%;
   position: relative;
   top: 3.6rem;
@@ -133,29 +133,33 @@ section:last-child {
 }
 
 .line {
-  background-color:burlywood;
-  height:1.5rem;
-  box-sizing:border-box;
-  width:100%;
+  background-color: burlywood;
+  height: 1.5rem;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 /* info container */
-.info-container{
+.info-container {
   box-sizing: border-box;
-  width:100%;
+  width: 100%;
   height: 20rem;
-  padding-top:5rem;
+  padding-top: 5rem;
 }
 .info-container--name,
-.info-container--link{
-  text-align:right;
+.info-container--link {
+  text-align: right;
 }
 
-.info-container--name{
-  box-sizing:border-box;
-  width:100%;
-  height:3rem;
-  font-weight:bold;
-  font-size:1.8rem;
+.info-container--name {
+  box-sizing: border-box;
+  width: 100%;
+  height: 3rem;
+  font-weight: 400;
+  color: midnightblue;
+  font-size: 1.8rem;
 }
-
+.info-container--link {
+  cursor: pointer;
+  color: black;
+}
