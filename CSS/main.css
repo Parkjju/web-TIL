@@ -118,14 +118,23 @@ section:last-child {
 /* index페이지 소개란 */
 .main-page {
   padding-top: 1.5rem;
-  padding-left: 15rem;
-  width: 50rem;
+  padding-left: 30%;
+  box-sizing:border-box;
+  width: 80%;
   position: relative;
   top: 3.6rem;
   left: 20rem;
 }
 
 .main-page--title {
-  font-size: 60px;
+  font-size: 100px;
   font-family: "Sigmar One", cursive;
+  /* font-family: 'Shadows Into Light', cursive; */
+}
+
+.line {
+  background-color:burlywood;
+  height:1.5rem;
+  box-sizing:border-box;
+  width:100%;
 }
