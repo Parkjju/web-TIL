@@ -86,6 +86,10 @@
   top: 3.6rem;
 }
 
+/* 좌측 메뉴바 화살표회전 애니메이션 */
+.sidebar-group: {
+}
+
 /* 타이틀메뉴 바깥경계박스 */
 .sidebar-group {
   height: 2.3rem;
@@ -156,10 +160,24 @@ section:last-child {
   width: 100%;
   height: 3rem;
   font-weight: 400;
-  color: midnightblue;
+  color: black;
   font-size: 1.8rem;
 }
 .info-container--link {
   cursor: pointer;
-  color: black;
+  color: #3eaf7c;
+}
+
+/* rotate animation */
+@keyframes rotateRight {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(90deg);
+  }
+}
+
+.open {
+  animation: rotateRight 0.5s ease-in-out;
 }
